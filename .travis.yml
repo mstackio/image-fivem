@@ -2,11 +2,7 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t mstackio/fivem .
+  - docker build --no-cache -t mstackio/fivem:latest .
 script:
-  - docker images mstackio/fivem
-after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push mstackio/fivem;
-    fi
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push mstackio/fivem:latest
