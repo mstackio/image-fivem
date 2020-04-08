@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/mstackio/image-fivem.svg?branch=master)](https://travis-ci.com/mstackio/image-fivem)
 ![GitHub](https://img.shields.io/github/license/mstackio/image-fivem)
+![Docker Pulls](https://img.shields.io/docker/pulls/mstackio/fivem)
 
 This docker image allows you to run a server for FiveM, a modded GTA multiplayer.
 The container should be stopped so fivem can be configured to the user requirements in the server.cfg.
