@@ -1,7 +1,7 @@
 FROM mstackio/alpine
 
 RUN apk add --no-cache ca-certificates curl
-RUN curl https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/2443-e569d9f3a4a1ed48b3c1770b40f81ed5eee9d3bf/fx.tar.xz| tar xJ -C /srv
+RUN curl https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/2802-a203581ad20c36ab2f8688bbf2ec8660cbb8e1c9/fx.tar.xz| tar xJ -C /srv
 
 WORKDIR /srv
 
